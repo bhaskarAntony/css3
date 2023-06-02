@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.commonAnimation{
+    padding:20px;
+    border-radius: 10px;
+    margin: 30px;
+    height:300px;
+}
+.commonAnimation>h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px #000;
+}
+.animation1{
+    /*animation:myanimation 2s infinite*/
+    animation: myanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.animation2{
+    height: 100vh;
+    animation:myanimation2 2s infinite;
+    background-size: 100%;
+}
+.animation3{
+    background-color: #6d047b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    color: #fff;
+    height: 100px;
+    width:fit-content;
+    position: absolute;
+    animation: myanimation3 5s infinite;
+}
+@keyframes myanimation{
+    from{border-radius: 20px; background-color: #6d047b;}
+    to{border-radius: 50%;  background-color: #db0719; border: 20px double #6d047b; width: fit-content;}
+}
+@keyframes myanimation2{
+    from{background: url("../images/car\ \(2\).jpg")  top;}
+    to{background: url("../images/car\ \(2\).jpg") bottom;}
+}
+@keyframes myanimation3{
+    0%{
+        top:0;
+        left: 0px;
+    }
+    25%{
+        top:30%;
+        background-color: chartreuse;
+    }
+    50%{
+        top:0;
+        background-color: deepskyblue;
+    }
+    75%{
+        top:40%;
+        background-color: darkgreen;
+    }
+    90%{
+        top: 0;
+        background-color: rgb(155, 18, 162);
+    }
+    100%{
+        bottom: 0;
+        width:100%;
+        background-color: darksalmon;
+    }
+   
+}

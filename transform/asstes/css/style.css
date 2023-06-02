@@ -1,0 +1,137 @@
+section{
+    padding:20px;
+    margin: 20px;
+    height:100px;
+    width:400px;
+    box-shadow: -3px -3px 3px #ccc, 3px 3px 3px #ccc;
+    border-radius: 10px;
+    transition: 1s;
+}
+.translate:hover{
+    background-color: #52088a;
+    color:#fff;
+    transform: translate(100px,100px);
+}
+.translateX:hover{
+    background-color: #d2001c;
+    color:#fff;
+    transform: translateX(100px);
+}
+.translateY:hover{
+    background-color: #186e05;
+    color:#fff;
+    transform: translateY(100px);
+}
+.scale:hover{
+    background-color: #52088a;
+    color:#fff;
+    transform: scale(2,2);
+}
+.scaleX:hover{
+    background-color: #d2001c;
+    color:#fff;
+    transform: scaleX(2);
+}
+.scaleY:hover{
+    background-color: #186e05;
+    color:#fff;
+    transform: scaleY(2);
+}
+.rotate:hover{
+    background-color: #186e05;
+    color:#fff;
+    animation: rotate linear 2s infinite;
+}
+.rotateX:hover{
+    background-color: #d2001c;
+    color:#fff;
+    transform: rotateX(180deg);
+}
+.rotateY:hover{
+    background-color: #186e05;
+    color:#fff;
+    transform: rotateY(180deg);
+}
+.skew:hover{
+    background-color: #186e05;
+    color:#fff;
+    transform: skew(30deg,20deg);
+}
+.skewX:hover{
+    background-color: #d2001c;
+    color:#fff;
+    transform: skewX(20deg);
+}
+.skewY:hover{
+    background-color: #186e05;
+    color:#fff;
+    transform: skewY(20deg);
+}
+
+.clock{
+    position: relative;
+    width:400px;
+    height:400px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjhNQ-oH2q1B4YHYQ9tzqDqfdnZoq4o_SOw&usqp=CAU);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.dot{
+    width: 20px;
+    height:20px;
+    background-color: #000;
+    border-radius: 100px;
+    position: absolute;
+    left:49%;
+}
+.sec{
+    position: absolute;
+    display: block;
+    width: 200px;
+    height:6px;
+    background-color: #d40323;
+    transform-origin: left;
+    border-radius: 10px;
+    animation: rotate steps(60) 60s infinite;
+}
+.min{
+    display: block;
+    width: 200px;
+    height:9px;
+    background-color: #186e05;
+    transform-origin: left;
+    border-radius: 10px;
+    animation: rotate steps(60) 6000s infinite;
+}
+.hour{
+    position: absolute;
+    display: block;
+    width: 180px;
+    height:10px;
+    background-color: #020a27;
+    transform-origin: left;
+    border-radius: 10px;
+    left: 50%;
+    animation: rotate steps(60) 60000s infinite;
+}
+
+/*p5.html*/
+.matrix1:hover{
+    transform: matrix(2,0,0,2,120,300);
+}
+.matrix2:hover{
+    transform: matrix(1,2,-1,1,80,80);
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,48 @@
+/* mobile */
+@media(max-width:768px){
+    .banner{
+        background:linear-gradient(#000000d1,#00000048), url("../images/mobile_food.jpg") no-repeat center;
+        background-size: cover;
+        padding: 10px;
+    }
+    .restaurent,.card, footer{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    .card{
+        letter-spacing: 2px;
+        padding: 20px;
+        line-height: 1;
+    }
+
+    .touch{
+        padding: 10px;
+    }
+    .touch>div>h1{
+        font-size: 2.2em;
+        text-align: left;
+    }
+    .touch>div>p{
+        text-align: left;
+    }
+    .restaurent>div{
+        width: 90%;
+    }
+    .restaurent>div>img{
+        width: 90%;
+    }
+    footer{
+        text-align: center;
+    }
+}
+/* tablet */
+@media(min-width:769px) and (max-width:1024px){
+    .banner{
+        background:linear-gradient(#000000d1,transparent), url("../images/tablet_food.jpg") no-repeat center;
+        background-size: cover;
+    }
+}

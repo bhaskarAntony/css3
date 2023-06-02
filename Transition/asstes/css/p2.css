@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    background-color: rgb(4, 90, 33);
+    padding:20px;
+    margin: 20px;
+    color: #fff;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.bgClip{
+    border: 3px dotted #d70909;
+    border-radius:30px;
+    text-align: center;
+    background-clip: content-box;
+    transition: 2s;
+}
+.bgClip:hover{
+    border-radius: 10px;
+}

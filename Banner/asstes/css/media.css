@@ -1,0 +1,76 @@
+@media(max-width:768px){
+   header{
+    background-color: blue;
+   }
+   header>nav>ul{
+    text-align: center;
+    float: none;
+   }
+   header>nav>ul>li{
+    display: block;
+   }
+   .banner2{
+    background-image: url("../images/mobile_vr.jpg");
+   }
+   .banner3{
+      height: 100vh;
+      text-align: center;
+      background: linear-gradient(45deg,rgb(30, 0, 255), white, rgb(184, 0, 0));
+  }
+  .banner4{
+    text-align: center;
+    height: 100vh;
+    background: url("../images/mobile.jpg") no-repeat center;
+    background-size: contain;
+}
+.banner5{
+  background: repeating-linear-gradient(15deg ,rgb(2, 120, 6),rgb(181, 226, 1) 50%);
+}
+.banner6{
+  background: linear-gradient(to right, rgba(2, 137, 9, 0.7), rgba(217, 0, 255, 0.4)), url("../images/mobile_vr.jpg");
+  background-size: cover;
+  background-position: center;
+}
+video{
+  transform: scale(3);
+}
+.video>div{
+  left:47%;
+}
+}
+@media(min-width:769px) and (max-width:1200px){
+    header{
+        background-color: rgb(42, 4, 107);
+        padding: 20px;
+        text-align: center;
+       }
+       header>nav>ul{
+        float: none;
+       }
+       .banner2{
+        background-image: url("../images/mobile.jpg");
+       }
+       .banner3{
+         height: 100vh;
+         text-align: center;
+         background: linear-gradient(to right,rgb(112, 0, 182), rgb(199, 6, 6), rgb(164, 209, 1));
+       }
+        .banner4{
+          text-align: center;
+          height: 100vh;
+          background: url("../images/mobile.jpg") no-repeat left, url("../images/mobile_vr.jpg") no-repeat right;
+          background-size: contain;
+      }
+      .banner5{
+        background: repeating-linear-gradient(45deg ,rgb(255, 5, 47),rgb(182, 2, 247) 50%);
+      }
+      .banner6{
+        background: linear-gradient(to right, rgba(0, 45, 194, 0.7), rgba(0, 212, 223, 0.4)), url("../images/mobile.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+      .video>div{
+        left:10%;
+      }
+        
+        }

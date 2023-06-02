@@ -1,0 +1,36 @@
+.common{
+    width:400px;
+    height:150px;
+    padding-top:30px;
+    text-align: center;
+    margin:20px;
+    background-color: rgb(8, 112, 3);
+    color:#fff;
+    transition: width 2s;
+    font-size: 3em;
+}
+.common:hover{
+    width:200px;
+    background-color: rgb(0, 226, 120);
+}
+#d1{
+    transition-timing-function: linear;/*cubic-bazier(0, 0,1,1)*/
+}
+#d2{
+    transition-timing-function: ease;/*cubic-bazier(0.42, 0,1,1)*/
+}
+#d3{
+    transition-timing-function: ease-in;/*cubic-bazier(0.25, 0.1,0.25,1)*/
+}
+#d4{
+    transition-timing-function: ease-out;/*cubic-bazier(0, 0,0.58,1)*/
+}
+#d5{
+    transition-timing-function: ease-in-out;/*cubic-bazier(0.42, 0,0.58,1)*/
+}
+#d6{
+    transition-timing-function: steps(6, jump-start);/*jump-start, jump-end, start-jump, end*/
+}
+#d7{
+    transition-timing-function: cubic-bezier(0.5, 0.7, 0.8, 0.9);/**/
+}

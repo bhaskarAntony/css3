@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    background-color: rgb(4, 90, 33);
+    padding:20px;
+    margin: 20px;
+    color: #fff;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+    line-height: 40px;
+    border-radius: 20px;
+}
+.transition{
+    transition: 2000ms;
+    transition: color 2s;
+    transition: background-color calc(1s + 1s);
+}
+.transition:hover{
+    background-color: chartreuse;
+    color:#000;
+}

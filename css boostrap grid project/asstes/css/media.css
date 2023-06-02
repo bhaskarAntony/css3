@@ -1,0 +1,104 @@
+@media(max-width:992px){
+    [class*="col"]{
+        width:100%;
+    }
+    /* ICONS */
+    .icons{text-align: left;}
+    .icons>b{margin: auto 0px;}
+    header>nav{text-align: center;}
+    header>nav>ul{float:none}
+    header>nav>ul>li{display: block;}
+    .desktop-banner, .tablet-banner{display: none;}
+
+    .mobile-banner{
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+    .mobile-banner{
+        overflow: hidden;
+        position: relative;
+    }
+    .mobile-banner>video{
+        width: 100%;
+    }
+    .mobile-banner>div{
+        position: absolute;
+        top:18%;
+        left: 4%;
+        line-height: 1.2;
+        color:#fff;
+        text-shadow: 1px 1px 5px #000;
+        letter-spacing: 1.3px;
+        font-size: 1.7em;
+        backdrop-filter: blur(10px);
+        padding:20px;
+        border-radius: 20px;
+    }
+    .mobile-banner>div>button{
+        border: none;
+        padding:10px 30px;
+        font-size: 1em;
+        background:linear-gradient(45deg,#54059e,#d23737) ;
+        color:#fff;
+        border-radius: 10px;
+    }
+    .p-50{
+        padding:10px;
+    }
+}
+
+/* TABLET */
+@media(min-width:993px) and (max-width:1200px){
+    /* GRID */
+    .colTab1{width:8.33%}
+    .colTab2{width:16.66%}
+    .colTab3{width:25%}
+    .colTab4{width:33.33%}
+    .colTab5{width:41.66%}
+    .colTab6{width:50%}
+    .colTab7{width:58.33%}
+    .colTab8{width:66.66%}
+    .colTab9{width:75%}
+    .colTab10{width:83.33%}
+    .colTab11{width:91.66%}
+    .colTab12{width:100%}
+    .desktop-banner, .mobile-banner{display: none;}
+
+    .tablet-banner{
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+    .tablet-banner{
+        overflow: hidden;
+        position: relative;
+    }
+    .tablet-banner>video{
+        width: 100%;
+    }
+    .tablet-banner>div{
+        position: absolute;
+        top:18%;
+        left: 4%;
+        line-height: 1.2;
+        color:#fff;
+        text-shadow: 1px 1px 5px #000;
+        letter-spacing: 1.3px;
+        font-size: 1.7em;
+        backdrop-filter: blur(10px);
+        padding:20px;
+        border-radius: 20px;
+    }
+    .tablet-banner>div>button{
+        border: none;
+        padding:10px 30px;
+        font-size: 1em;
+        background:linear-gradient(45deg,#54059e,#d23737) ;
+        color:#fff;
+        border-radius: 10px;
+    }
+    section{
+        padding:0;
+    }
+}

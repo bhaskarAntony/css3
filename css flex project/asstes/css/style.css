@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    transition: ease-in-out 0.5s;
+
+}
+body{
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+:root{
+    --yellow:#e8ac09;
+    --black:#111;
+    --white:#fff;
+}
+.banner{
+    height: 100vh;
+    background:linear-gradient(45deg,#000000f7,#ec1b304a), url("../images/3007283.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+    text-align: center;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+.banner>div>h1{
+    font-size: 3em;
+}
+.banner>div>h1:hover{
+    color: var(--yellow);
+}
+.banner>div>p>span{
+    color:var(--yellow);
+}
+.banner>div>button{
+    outline:none;
+    border:none;
+    padding:10px 40px;
+    margin: 10px;
+    margin-right: 30px;
+    color:var(--black);
+    font-size:1.3em;
+    border: 4px solid var(--white);
+    border-radius: 50px;
+    margin-top: 30px;
+    background-color: transparent;
+    color: var(--white);
+}
+.banner>div>button:hover{
+   background-color: var(--white);
+   color: var(--black);
+}
+.restaurent, .card, .touch,footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.restaurent>div, .card>div{
+    flex: 1;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+.restaurent>div>h1{
+    font-size: 2.3em;
+    letter-spacing: 3px;
+}
+.restaurent>div>p{
+    font-size: 1.3em;
+    color:#5a5757;
+}
+.restaurent>div>p:first-child{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #111;
+}
+.restaurent>div>img{
+    width: 80%;
+    border-radius: 100%;
+}
+.restaurent>div>img:hover{
+    transform:scale(0.9);
+}
+.card{
+   margin: 20px;    
+   background: linear-gradient(45deg,#972bdf,#ec1b30);
+   padding: 50px;
+   border-radius:20px;
+}
+.card div{
+    min-width: 250px;
+}
+.card>div>h1{
+    color:var(--white);
+    font-size: 2em;
+    letter-spacing: 2.5px;
+    line-height: 1.5;
+}
+.card>div>p{
+    color:var(--white);
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.touch{
+    flex-flow: column;
+    text-align: center;
+    padding:50px 200px;
+}
+.touch>FORM>input{
+   outline: none;
+   width: 100%;
+   height:30px;
+   margin: 10px;
+   font-size: 1.2em;
+   border: none;
+   border: 1px solid #989090;
+   border-radius: 4px;
+   padding:10px
+}
+.touch>div>p{
+    font-size: 1.5em;
+    color:#5a5757;
+    margin-bottom: 30px;
+}
+.touch>form>textarea{
+    width:100%;
+    margin-left: 5px;
+    outline: none;
+    border: 1px solid #989090;
+    border-radius: 4px;
+    padding:10px;
+    font-size: 1.3em;
+}
+.touch>div>h1{
+    font-size: 3em;
+    line-height: 2;
+    letter-spacing: 3px;
+    color: #0d0c0d;
+}
+.touch>form>button{
+    outline: none;
+    border: none;
+    padding:20px 50px;
+    font-size: 1.6em;
+    background-color: #000;
+    color: var(--white);
+    margin-top: 20px;
+    border-radius: px;
+}
+.touch>form>button:hover{
+    opacity: 0.7;
+}
+footer{
+    background-color: #000;
+    color:#fff;
+    padding:20px;
+    font-size: 1.3em;
+    line-height: 2;
+    gap:30px;
+}
+footer [class*="fa-"]{
+    font-size: 2em;
+    margin: 10px;
+}
+footer [class*="fa-"]:hover{
+    color:var(--yellow);
+    transform: translateY(-20px);
+}
+footer>div>h1{
+    color: var(--yellow);
+}
